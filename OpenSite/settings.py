@@ -24,6 +24,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(",")
 
+CSRF_TRUSTED_ORIGINS = ['https://openbench.catgirl.hk']
 USE_X_FORWARDED_HOST = True
 CORS_ALLOW_ALL_ORIGINS = True
 
