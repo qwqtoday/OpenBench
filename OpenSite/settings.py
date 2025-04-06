@@ -23,9 +23,9 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(",")
-CORS_ALLOWED_ORIGINS = [
-    "https://openbench.catgirl.hk"
-]
+
+USE_X_FORWARDED_HOST = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 HTML_MINIFY   = True
 APPEND_SLASH  = True
