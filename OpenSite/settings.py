@@ -23,13 +23,14 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(",")
+CORS_ALLOWED_ORIGINS = [
+    "https://openbench.catgirl.hk"
+]
 
 HTML_MINIFY   = True
 APPEND_SLASH  = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
-
-USE_X_FORWARDED_HOST = True
 
 # Application definition
 
