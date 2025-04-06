@@ -29,6 +29,8 @@ APPEND_SLASH  = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
+USE_X_FORWARDED_HOST = True
+
 # Application definition
 
 SETTINGS_DIR  = os.path.dirname(__file__)
